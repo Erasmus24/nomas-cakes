@@ -11,9 +11,9 @@
     --fw-regular: 300;
     --fw-bold: 900;
 
-    --clr-light: #f5f5f5;
-    --clr-dark:#303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #fce4ec;
+    --clr-dark:#880e4f;
+    --clr-accent: #ff80ab;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -412,7 +412,7 @@ button .nav-toggle{
 }
 
 .footer{
-    background: #111;
+    background: #ad1457;
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
