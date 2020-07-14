@@ -3,11 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Oswald:wght@200&family=Public+Sans:wght@500&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/99eb1199c0.js" crossorigin="anonymous"></script>
+
     <title>Noma's Cakes</title>
 </head>
 <body>
-    <h1>This is Noma's website!!!!!</h1>
-    <img src="./nomaAssets/Noma.jpeg" alt="">
+    <header>
+        <div>
+            <img class="logo" src="./nomaAssets/Noma.jpeg" alt="">          
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <div class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My work</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Nomandla Vaaltein</strong> 
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">
+            Professional Chef
+        </p>
+        <img src="./assets/SETHadebe.jpg" alt="" class="intro__img">
+    </section>
+
+    <section class="my__services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+
+            <div class="service">
+                <h3>Culinary Chef</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus hic tempora, doloribus labore sit ea voluptatibus
+                eum explicabo iure tempore cumque et exercitationem assumenda,
+                vero incidunt obcaecati perspiciatis atque nobis?
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Pastry Chef</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Qui beatae quidem consequuntur culpa totam quae libero explicabo eveniet!
+                Placeat, perspiciatis quas quo eum earum nam laborum fuga nesciunt laudantium molestiae.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>Cake Decorations</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Doloribus, porro fugiat cupiditate quidem molestiae odio sit
+                repudiandae quos error dolor consequatur iusto ex debitis
+                expedita cumque. Amet dicta unde delectus?
+                </p>
+            </div>
+
+
+        </div>
+        <a href="#work" class="btn">My work</a>
+    </section>
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">
+            I am a successful Culinary and Pastry Chef.
+        </p>
+        <div class="about-me__body">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Odio consequuntur natus aperiam voluptatibus beatae aut accusamus, 
+                impedit voluptas earum velit non autem, nemo labore quos placeat corporis mollitia illo expedita.
+            </p>
+        </div>
+
+        <img class="about-me__img" src="./assets/SETHadebe1.jpg" alt="">
+    </section>
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">Sample Projects</h2>
+        <p class="section__subtitle section__subtitle--work">Take a look at what I can do</p>
+
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./assets/th (25).jpg" alt="">
+            </a>
     
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./assets/th (18).jpg" alt="">
+            </a>
+    
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./assets/musicplayer3.jpg" alt="">
+            </a>
+    
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./assets/Headphones.jpg" alt="">
+            </a>
+    
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./assets/th (39).jpg" alt="">
+            </a>
+    
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./assets/th (58).jpg" alt="">
+            </a>
+    
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./assets/th (5).jpg" alt="">
+            </a>
+    
+            <a href="#" class="portfolio__item">
+                <img class="portfolio__img" src="./assets/xbox.jpg" alt="">
+            </a>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <a href="mailto:erasmushadebe@gmail.com" class="footer__link">erasmushadebe@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://facebook.com">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://instagram.com">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://twitter.com">
+                    <i class="fab fa-twitter-square"></i>
+                </a>
+ 
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://github.com">
+                    <i class="fab fa-github-square"></i>
+                </a>
+ 
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="http://linkedin.com">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
 </body>
 </html>
