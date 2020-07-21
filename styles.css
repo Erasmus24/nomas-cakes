@@ -287,12 +287,12 @@ nav{
 
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 1em;
 }
 
 .logo{
-    max-width: 150px;
+    max-width: 100px;
 }
 
 button .nav-toggle{
@@ -314,8 +314,9 @@ button .nav-toggle{
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
-.nav--toggle{
-    padding: .25em;
+.nav-toggle{
+    height: 1em;
+    padding: .1em;
     background: transparent;
     border: 0;
 }
@@ -343,7 +344,8 @@ button .nav-toggle{
 }
 
 .nav-toggle{
-    padding: 5em;
+    padding-top: 1em;
+    padding-right: 1.5em;
     background: transparent;
     border: 0;
     cursor: pointer;
