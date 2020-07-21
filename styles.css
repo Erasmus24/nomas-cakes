@@ -160,6 +160,7 @@ nav{
     .intro{
         display: grid;
         width: min-content;
+        padding-top: 0;
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas: 
@@ -289,10 +290,12 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    padding-bottom: 0;
 }
 
 .logo{
-    max-width: 100px;
+    max-width: 200px;
+
 }
 
 button .nav-toggle{
@@ -315,7 +318,6 @@ button .nav-toggle{
 }
 
 .nav-toggle{
-    height: 1em;
     padding: .1em;
     background: transparent;
     border: 0;
