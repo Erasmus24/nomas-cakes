@@ -289,13 +289,19 @@ nav{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0;
     padding-bottom: 0;
+    height: 35px;
 }
 
 .logo{
-    max-width: 200px;
+    max-width: 650px;
+    display: flex;
+}
 
+
+.banner{
+    max-height: 200px;
 }
 
 button .nav-toggle{
@@ -410,30 +416,46 @@ button .nav-toggle{
     bottom: 6px;
 }
 
+/*Portfolio iamge section*/
 .portfolio{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-.portfolio__item{
-    background-color: var(--clr-accent);
-    overflow: hidden;
-    max-block-size: 319px;
-    min-block-size: 300px;
+.portfolio-column{
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
 }
 
-.portfolio__img{
-    transition: 
-        transform 1000ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
-        
+.portfolio-column img{
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
-.portfolio__img:hover{
-    transform: scale(1.2);
-    opacity: .7;
-}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .portfolio-column{
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
 
+  @media screen and (max-width: 600px) {
+    .portfolio-column{
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/*Footer section*/
 .footer{
     background: #ad1457;
     color: var(--clr-accent);
